@@ -20,9 +20,29 @@ namespace Shop_KopytovaPr.Elements
     /// </summary>
     public partial class Item : UserControl
     {
-        public Item()
+        public Item(object ItemData)
         {
             InitializeComponent();
+            Classes.Shop ShopData = ItemData as Classes.Shop;
+            tb_Name.Content = ShopData.Name;
+            tb_Price.Content = "Цена:" + ShopData.Price;
+            if (ItemData is Classes.Children)
+            {
+                Classes.Children ChildrenData = ItemData as Classes.Children;
+                tb_Charactiristic.Content = "Возраст:" + ChildrenData.Age;
+            }
+            if (ItemData is Classes.Sport)
+            {
+                Classes.Sport SportData = ItemData as Classes.Sport;
+                tb_Charactiristic.Content = "Размер:" + SportData.Size;
+            }
+            if (ItemData is Classes.Electronica)
+            {
+                Classes.Electronica ElData = ItemData as Classes.Electronica;
+                tb_Charactiristic.Content =
+                    "Аккумулятор: " + ElData.EmkostAkk + " мАч\n" +
+                    "Скорость: " + ElData.SpeedDrive + " км/ч";
+            }
         }
     }
 }
