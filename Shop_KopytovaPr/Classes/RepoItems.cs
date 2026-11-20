@@ -18,9 +18,9 @@ namespace Shop_KopytovaPr.Classes
             allitems.Add(new Sport("Спортивный мужской костюм", 4913, "S"));
             allitems.Add(new Sport("Мяч для водного поло", 812, "61-63 см"));
             allitems.Add(new Sport("Набор для гольфа Partida", 3950, "600*800 мм"));
-            allitems.Add(new Electronica("Велосипед", 10560, 100, 120));
-            allitems.Add(new Electronica("Скутер для малышей", 3000, 50, 10));
-            allitems.Add(new Electronica("Гироскутер", 6780, 60, 20));
+            allitems.Add(new Elements("Велосипед", 10560, 100, 120));
+            allitems.Add(new Elements("Скутер для малышей", 3000, 50, 10));
+            allitems.Add(new Elements("Гироскутер", 6780, 60, 20));
             return allitems;
         }
     }

@@ -36,9 +36,9 @@ namespace Shop_KopytovaPr.Elements
                 Classes.Sport SportData = ItemData as Classes.Sport;
                 tb_Charactiristic.Content = "Размер:" + SportData.Size;
             }
-            if (ItemData is Classes.Electronica)
+            if (ItemData is Classes.Elements)
             {
-                Classes.Electronica ElData = ItemData as Classes.Electronica;
+                Classes.Elements ElData = ItemData as Classes.Elements;
                 tb_Charactiristic.Content =
                     "Аккумулятор: " + ElData.EmkostAkk + " мАч\n" +
                     "Скорость: " + ElData.SpeedDrive + " км/ч";

@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Shop_KopytovaPr.Elements"
-             mc:Ignorable="d" 
-                          mc:Ignorable="d">
+             mc:Ignorable="d">
     <Grid>
         <Border Margin="20" Width="200" CornerRadius="20" Background="#FF5A5A5A">
             <Grid>
